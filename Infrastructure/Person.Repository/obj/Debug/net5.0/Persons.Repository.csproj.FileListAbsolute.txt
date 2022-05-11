@@ -1,0 +1,17 @@
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.csproj.AssemblyReference.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.AssemblyInfoInputs.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.AssemblyInfo.cs
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.csproj.CoreCompileInputs.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\bin\Debug\net5.0\Persons.Repository.deps.json
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\bin\Debug\net5.0\Persons.Repository.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\bin\Debug\net5.0\Persons.Repository.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\bin\Debug\net5.0\Persons.Contracts.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\bin\Debug\net5.0\Persons.Entities.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\bin\Debug\net5.0\Persons.Contracts.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\bin\Debug\net5.0\Persons.Entities.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.csproj.CopyComplete
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\refint\Persons.Repository.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\Persons.Repository.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Infrastructure\Person.Repository\obj\Debug\net5.0\ref\Persons.Repository.dll

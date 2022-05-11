@@ -1,0 +1,12 @@
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Contracts.deps.json
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Contracts.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Contracts.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.csproj.AssemblyReference.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.AssemblyInfoInputs.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.AssemblyInfo.cs
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\refint\Persons.Contracts.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\ref\Persons.Contracts.dll
