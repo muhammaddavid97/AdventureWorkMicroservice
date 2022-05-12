@@ -6,4 +6,8 @@
     <RootNamespace>Persons.Contracts</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Person.Entities\Persons.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

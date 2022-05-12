@@ -32,13 +32,23 @@ namespace PersonWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            // panggil method ServiceExtension
+            // call serviceExtension method
             services.ConfigureCors();
             services.ConfigureIISIntegration();
 
+            // Layer Domain / Core
             services.ConfigureLoggerService();
             services.ConfigureDbContext(Configuration);
+
+            // Call Security Identity
+            services.AddAuthentication();
+            services.ConfigureIdentity();
+
+            // Layer Infrastructure
+            services.ConfigureManager();
+
+            // Call AutoMapper config
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -74,6 +84,8 @@ namespace PersonWebApi
 
             app.UseRouting();
 
+            // Add Authorization
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

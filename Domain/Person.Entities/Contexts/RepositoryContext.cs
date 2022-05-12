@@ -1,13 +1,15 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Persons.Entities.Configuration;
 using Persons.Entities.Models;
 
 #nullable disable
 
 namespace Persons.Entities.Contexts
 {
-    public partial class RepositoryContext : DbContext
+    public partial class RepositoryContext : IdentityDbContext<User>
     {
         public RepositoryContext()
         {
@@ -46,7 +48,8 @@ namespace Persons.Entities.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
 
             modelBuilder.Entity<Address>(entity =>
             {

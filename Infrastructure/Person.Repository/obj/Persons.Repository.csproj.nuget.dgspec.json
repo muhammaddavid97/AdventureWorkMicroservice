@@ -27,7 +27,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\E5470\\Downloads\\AdventureWorkMicroservice-master\\PersonWebApi\\Domain\\Person.Entities\\Persons.Entities.csproj": {
+                "projectPath": "C:\\Users\\E5470\\Downloads\\AdventureWorkMicroservice-master\\PersonWebApi\\Domain\\Person.Entities\\Persons.Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -94,6 +98,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.16, )"

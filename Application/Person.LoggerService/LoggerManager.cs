@@ -18,6 +18,7 @@ namespace Person.LoggerService
         public LoggerManager()
         {
         }
+
         public void LogDebug(string message)
         {
             logger.Debug(message);

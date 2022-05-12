@@ -10,3 +10,6 @@ C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Applicati
 C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\refint\Persons.Contracts.dll
 C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.pdb
 C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\ref\Persons.Contracts.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Entities.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Entities.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.csproj.CopyComplete
