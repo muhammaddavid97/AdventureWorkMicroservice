@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Persons.Contracts;
@@ -10,6 +11,7 @@ namespace PersonWebApi.Controllers
 {
     [Route("api/person")]
     [ApiController]
+    [ApiExplorerSettings(GroupName = "v1")]
     public class PersonController : ControllerBase
     {
         private readonly IRepositoryManager _repository;
@@ -23,14 +25,14 @@ namespace PersonWebApi.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllPerson()
+        [HttpGet, Authorize]
+        public async Task<IActionResult> GetPerson()
         {
             var person = await _repository.Person.GetAllPersonAsync(trackChanges: false);
-            var personDto = _mapper.Map<IEnumerable<PersonSignInDto>>(person);
+            var personDto = _mapper.Map<IEnumerable<PersonDto>>(person);
             return Ok(personDto);
         }
 
-
+    
     }
 }

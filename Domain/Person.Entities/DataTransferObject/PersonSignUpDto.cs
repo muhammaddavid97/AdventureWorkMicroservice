@@ -32,11 +32,11 @@ namespace Persons.Entities.DataTransferObject
         public ICollection<string> PersonType { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
-        [MaxLength(10, ErrorMessage = "Maximum length for Password is 10 characters")]
+        [MinLength(10, ErrorMessage = "Maximum length for Password at least 10 characters")]
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Confirm Password is required")]
-        [MaxLength(10, ErrorMessage = "Maximum length for Password is 10 characters")]
+        [MinLength(10, ErrorMessage = "Maximum length for Password at least 10 characters")]
         public string ConfirmPassword { get; set; }
     }
 }

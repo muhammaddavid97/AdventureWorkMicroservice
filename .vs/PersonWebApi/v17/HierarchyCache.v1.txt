@@ -1,0 +1,242 @@
+﻿++Solution 'PersonWebApi' ‎(5 of 5 projects)
+i:{00000000-0000-0000-0000-000000000000}:PersonWebApi.sln
+++src
+i:{00000000-0000-0000-0000-000000000000}:src
+++WebApi
+i:{34b1e01a-fc65-4a80-9a10-fe2b53a56f32}:WebApi
+++PersonWebApi
+i:{25393c4d-0545-463c-bcd4-85c0d0620e20}:PersonWebApi
+++Connected Services 
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>849
+++Dependencies
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>848
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:>596
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:>546
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:>545
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:>695
+++Properties
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\properties\
+++Controllers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\controllers\
+++Extensions
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\extensions\
+++ServiceExtensions.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\extensions\serviceextensions.cs
+++Mapping
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\mapping\
+++appsettings.json
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\appsettings.json
+++AuthenticationController.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\authenticationcontroller.cs
+++nlog.config
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\nlog.config
+++Program.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\program.cs
+++Startup.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\startup.cs
+++WeatherForecast.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\weatherforecast.cs
+++No service dependencies discovered
+++Analyzers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:analyzers
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:analyzers
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:analyzers
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:analyzers
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:analyzers
+++Frameworks
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:frameworks
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:frameworks
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:frameworks
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:frameworks
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:frameworks
+++Packages
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:packages
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:packages
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:packages
+++Projects
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:projects
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:projects
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:projects
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:projects
+++launchSettings.json
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\properties\launchsettings.json
+++PersonController.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\controllers\personcontroller.cs
+++PersonV2Controller.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\controllers\personv2controller.cs
+++WeatherForecastController.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\controllers\weatherforecastcontroller.cs
+++MappingProfile.cs
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\mapping\mappingprofile.cs
+++appsettings.Development.json
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\appsettings.development.json
+++appsettings.Production.json
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\appsettings.production.json
+++Microsoft.AspNetCore.Analyzers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:c:\users\e5470\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.16\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\webapi\personwebapi\microsoft.netcore.app
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\infrastructure\person.repository\microsoft.netcore.app
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\microsoft.netcore.app
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.loggerservice\microsoft.netcore.app
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\microsoft.netcore.app
+++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>862
+++Microsoft.AspNetCore.Authentication.JwtBearer (5.0.16)
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>865
+++Microsoft.EntityFrameworkCore.Design (5.0.16)
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>863
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.16)
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>861
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:>904
+++Microsoft.EntityFrameworkCore.Tools (5.0.16)
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>866
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:>906
+++Swashbuckle.AspNetCore (5.6.3)
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>864
+++Person.LoggerService
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.loggerservice\person.loggerservice.csproj
+i:{5cb5ed42-e273-43b4-9cdb-37afa1d193a8}:Person.LoggerService
+++Persons.Entities
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\persons.entities.csproj
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\bin\debug\net5.0\persons.entities.dll
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\persons.entities.csproj
+i:{c961051e-0f92-48d0-a860-ace84a0d7905}:Persons.Entities
+++Persons.Repository
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\infrastructure\person.repository\persons.repository.csproj
+i:{cc8e2aec-4674-48d3-9d89-73c2e22bef7a}:Persons.Repository
+++Infrastructure
+i:{34b1e01a-fc65-4a80-9a10-fe2b53a56f32}:Infrastructure
+++Models
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\infrastructure\person.repository\models\
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\
+++AuthenticationManager.cs
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\infrastructure\person.repository\authenticationmanager.cs
+++RepositoryBase.cs
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\infrastructure\person.repository\repositorybase.cs
+++RepositoryManager.cs
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\infrastructure\person.repository\repositorymanager.cs
+++PersonRepository.cs
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\infrastructure\person.repository\models\personrepository.cs
+++Persons.Contracts
+i:{f1f80466-b538-4321-93b6-2ff8c16a2d57}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\bin\debug\net5.0\persons.contracts.dll
+i:{5cb5ed42-e273-43b4-9cdb-37afa1d193a8}:Persons.Contracts
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\persons.contracts.csproj
+++Application
+i:{34b1e01a-fc65-4a80-9a10-fe2b53a56f32}:Application
+++Interfaces
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\interfaces\
+++IAuthenticationManager.cs
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\iauthenticationmanager.cs
+++ILoggerManager.cs
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\iloggermanager.cs
+++IRepositoryBase.cs
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\irepositorybase.cs
+++IRepositoryManager.cs
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\irepositorymanager.cs
+++IPersonRepository.cs
+i:{3adf7c41-7083-41f7-9f74-b63837b44530}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.contracts\interfaces\ipersonrepository.cs
+++LoggerManager.cs
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\application\person.loggerservice\loggermanager.cs
+++NLog.Extensions.Logging (1.7.4)
+i:{724e0e7a-93bb-4882-b435-731564c762ae}:>877
+++Domain
+i:{34b1e01a-fc65-4a80-9a10-fe2b53a56f32}:Domain
+++Configuration
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\configuration\
+++Contexts
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\contexts\
+++DataTransferObject
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\datatransferobject\
+++Migrations
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\migrations\
+++RoleConfiguration.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\configuration\roleconfiguration.cs
+++RepositoryContext.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\contexts\repositorycontext.cs
+++PersonDto.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\datatransferobject\persondto.cs
+++PersonSignInDto.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\datatransferobject\personsignindto.cs
+++PersonSignUpDto.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\datatransferobject\personsignupdto.cs
+++20220512080615_CreatingIdentityTables.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\migrations\20220512080615_creatingidentitytables.cs
+++20220512082952_AddedRolesToDb.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\migrations\20220512082952_addedrolestodb.cs
+++RepositoryContextModelSnapshot.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\migrations\repositorycontextmodelsnapshot.cs
+++Address.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\address.cs
+++AddressType.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\addresstype.cs
+++BusinessEntity.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\businessentity.cs
+++BusinessEntityAddress.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\businessentityaddress.cs
+++BusinessEntityContact.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\businessentitycontact.cs
+++ContactType.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\contacttype.cs
+++CountryRegion.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\countryregion.cs
+++EmailAddress.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\emailaddress.cs
+++Password.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\password.cs
+++Person.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\person.cs
+++PersonPhone.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\personphone.cs
+++PhoneNumberType.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\phonenumbertype.cs
+++SalesTerritory.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\salesterritory.cs
+++StateProvince.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\stateprovince.cs
+++User.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\user.cs
+++vAdditionalContactInfo.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\vadditionalcontactinfo.cs
+++vStateProvinceCountryRegion.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\models\vstateprovincecountryregion.cs
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (5.0.16)
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:>905
+++Microsoft.EntityFrameworkCore (5.0.16)
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:>903
+++20220512080615_CreatingIdentityTables.Designer.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\migrations\20220512080615_creatingidentitytables.designer.cs
+++20220512082952_AddedRolesToDb.Designer.cs
+i:{af7c9109-f714-4c6c-8a14-17aa913301c0}:c:\users\e5470\downloads\adventureworkmicroservice-master\personwebapi\domain\person.entities\migrations\20220512082952_addedrolestodb.designer.cs
+++Microsoft identity platform
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>921
+++For applications that authenticate users with the Microsoft identity platform (Azure AD, Azure AD B2C and personal Microsoft accounts).
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>922
+++SQL Server Database (ConnectionStrings:development)
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>919
+++SQL Server Database dependency with connectionId 'ConnectionStrings:development' is detected
+i:{b54b458b-5714-49d1-b790-579cf19ef4bc}:>920

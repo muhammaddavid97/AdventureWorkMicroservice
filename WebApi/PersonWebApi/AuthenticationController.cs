@@ -19,11 +19,14 @@ namespace PersonWebApi
         // UserManager provide by Identity used for managing user
         private readonly UserManager<User> _userManager;
 
-        public AuthenticationController(ILoggerManager logger, IMapper mapper, UserManager<User> userManager)
+        private readonly IAuthenticationManager _authManager;
+
+        public AuthenticationController(ILoggerManager logger, IMapper mapper, UserManager<User> userManager, IAuthenticationManager authManager)
         {
             _logger = logger;
             _mapper = mapper;
             _userManager = userManager;
+            _authManager = authManager;
         }
 
         [HttpPost("signup")]
@@ -47,6 +50,18 @@ namespace PersonWebApi
 
             await _userManager.AddToRolesAsync(user, personSignUp.PersonType);
             return StatusCode(201);
+        }
+
+        [HttpPost("signin")]
+        public async Task<IActionResult> Authenticate([FromBody] PersonSignInDto person)
+        {
+            if (!await _authManager.ValidateUser(person))
+            {
+                _logger.LogWarn($"{ nameof(Authenticate)} : Authentication failed. Wrong username or password");
+                return Unauthorized();
+            }
+
+            return Ok(new { Token = await _authManager.CreateToken()});
         }
     }
 }

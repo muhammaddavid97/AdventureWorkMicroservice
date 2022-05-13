@@ -8,6 +8,7 @@ namespace PersonWebApi.Mapping
     {
         public MappingProfile()
         {
+            CreateMap<Persons.Entities.Models.Person, PersonDto>().ReverseMap();
             CreateMap<PersonSignUpDto, User>();
         }
     }

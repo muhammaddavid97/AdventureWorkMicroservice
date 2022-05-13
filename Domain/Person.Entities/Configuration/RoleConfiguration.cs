@@ -16,33 +16,33 @@ namespace Persons.Entities.Configuration
             builder.HasData(
                 new IdentityRole
                 {
-                    Name = "EM",
-                    NormalizedName = "Employee"
+                    Name = "Employee",
+                    NormalizedName = "EM"
                 },
                 new IdentityRole
                 {
-                    Name = "SP",
-                    NormalizedName = "Sales Person"
+                    Name = "Sales Person",
+                    NormalizedName = "SP"
                 },
                 new IdentityRole
                 {
-                    Name = "IN",
-                    NormalizedName = "Individual Customer"
+                    Name = "Individual Customer",
+                    NormalizedName = "IN"
                 },
                 new IdentityRole
                 {
-                    Name = "SC",
-                    NormalizedName = "Store Contact"
+                    Name = "Store Contact",
+                    NormalizedName = "SC"
                 },
                 new IdentityRole
                 {
-                    Name = "VC",
-                    NormalizedName = "Vendor Contact"
+                    Name = "Vendor Contact",
+                    NormalizedName = "VC"
                 },
                 new IdentityRole
                 {
-                    Name = "GC",
-                    NormalizedName = "General Contact"
+                    Name = "General Contact",
+                    NormalizedName = "GC"
                 }
                 );
         }
