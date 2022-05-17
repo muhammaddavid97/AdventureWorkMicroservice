@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Persons.Contracts;
+using Persons.Contracts.Interfaces;
 using Persons.Entities.DataTransferObject;
 using Persons.Entities.Models;
 using System.Threading.Tasks;
@@ -20,13 +21,18 @@ namespace PersonWebApi
         private readonly UserManager<User> _userManager;
 
         private readonly IAuthenticationManager _authManager;
+        
+        private readonly ISignUpService _signUp;
+        private readonly IRepositoryManager _repositoryManager;
 
-        public AuthenticationController(ILoggerManager logger, IMapper mapper, UserManager<User> userManager, IAuthenticationManager authManager)
+        public AuthenticationController(ILoggerManager logger, IMapper mapper, UserManager<User> userManager, IAuthenticationManager authManager, ISignUpService signUp, IRepositoryManager repositoryManager)
         {
             _logger = logger;
             _mapper = mapper;
             _userManager = userManager;
             _authManager = authManager;
+            _signUp = signUp;
+            _repositoryManager = repositoryManager;
         }
 
         [HttpPost("signup")]
@@ -37,31 +43,34 @@ namespace PersonWebApi
             // If action succeed will return message, if it return error, we add to modelState
             // if user created, it will return 201 created
 
-            var result = await _userManager.CreateAsync(user, personSignUp.Password);
+            var createUser = await _userManager.CreateAsync(user, personSignUp.Password);
+            
+            var dataSignUp = await _signUp.SignUp(personSignUp);
 
-            if (!result.Succeeded)
+            if (!createUser.Succeeded)
             {
-                foreach (var error in result.Errors)
+                foreach (var error in createUser.Errors)
                 {
                     ModelState.TryAddModelError(error.Code, error.Description);
                 }
                 return BadRequest(ModelState);
             }
-
-            await _userManager.AddToRolesAsync(user, personSignUp.PersonType);
+            
             return StatusCode(201);
         }
 
         [HttpPost("signin")]
         public async Task<IActionResult> Authenticate([FromBody] PersonSignInDto person)
         {
+            var dataSignIn = await _userManager.FindByNameAsync(person.UserName);
+            //var dataId = await _userManager.FindByIdAsync();
             if (!await _authManager.ValidateUser(person))
             {
                 _logger.LogWarn($"{ nameof(Authenticate)} : Authentication failed. Wrong username or password");
                 return Unauthorized();
             }
 
-            return Ok(new { Token = await _authManager.CreateToken()});
+            return Ok(new { Token = await _authManager.CreateToken(), dataSignIn.Id, dataSignIn.FirstName, dataSignIn.LastName, dataSignIn.UserName, dataSignIn.Email});
         }
     }
 }

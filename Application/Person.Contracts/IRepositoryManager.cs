@@ -10,6 +10,11 @@ namespace Persons.Contracts
     public interface IRepositoryManager
     {
         IPersonRepository Person { get; }
+        IBusinessEntityRepository Business { get; }
+        IAddressRepository Address { get; }
+        IEmailRepository Email { get; }
+        IPhoneNumberRepository PhoneNumber { get; }
+        IPasswordRepository Password { get; }
 
         void Save();
 

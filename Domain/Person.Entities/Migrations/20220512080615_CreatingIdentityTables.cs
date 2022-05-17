@@ -573,12 +573,12 @@ namespace Persons.Entities.Migrations
                 table: "AspNetRoleClaims",
                 column: "RoleId");
 
-            /*migrationBuilder.CreateIndex(
+            migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
                 table: "AspNetRoles",
                 column: "NormalizedName",
                 unique: true,
-                filter: "[NormalizedName] IS NOT NULL");*/
+                filter: "[NormalizedName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserClaims_UserId",
@@ -598,7 +598,7 @@ namespace Persons.Entities.Migrations
             /*migrationBuilder.CreateIndex(
                 name: "EmailIndex",
                 table: "AspNetUsers",
-                column: "NormalizedEmail");
+                column: "NormalizedEmail");*/
 
             migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
@@ -607,7 +607,7 @@ namespace Persons.Entities.Migrations
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
 
-            migrationBuilder.CreateIndex(
+            /*migrationBuilder.CreateIndex(
                 name: "AK_BusinessEntity_rowguid",
                 schema: "Person",
                 table: "BusinessEntity",

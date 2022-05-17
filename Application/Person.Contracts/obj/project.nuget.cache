@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Hms9DNxjE8yY2Es+2GwbF4vHTwvrG2tCgvFR0KAyGmiRsUQBtYpDtG4MuDTIlOyeu4geX4VCmjvbXFNRG8ot4g==",
+  "dgSpecHash": "yxQroMXKar3KyrucUFenwmntCOQbjvUeYibSmLa5DViDKRuYL74uiOKZuarTfKzNBDyP+c5IOcgGwi35iJTMKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\E5470\\Downloads\\AdventureWorkMicroservice-master\\PersonWebApi\\Application\\Person.Contracts\\Persons.Contracts.csproj",
   "expectedPackageFiles": [

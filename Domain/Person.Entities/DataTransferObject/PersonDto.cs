@@ -12,6 +12,6 @@ namespace Persons.Entities.DataTransferObject
         public string PersonType { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-
+        public string Suffix { get; set; }
     }
 }

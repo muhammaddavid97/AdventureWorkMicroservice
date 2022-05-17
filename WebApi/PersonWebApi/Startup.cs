@@ -46,6 +46,7 @@ namespace PersonWebApi
             services.ConfigureJWT(Configuration);
 
             services.ConfigureAuthenticationManager();
+            services.ConfigureSignUpService();
 
             // Layer Infrastructure
             services.ConfigureManager();

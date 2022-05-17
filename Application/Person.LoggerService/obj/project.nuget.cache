@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CUAvJQNo/mrg9I4Xmr9hzlvykB0i1qN1AEn5ScO1rzu3lraLCBWLXKzOg1epLNKJvfzvzlHJF5L5qXKcNpR1FQ==",
+  "dgSpecHash": "RH5LiXeuu8I3CIAJPYPfdBBYbo3Sa28Hknmnf6A+JjBtaN9H5dZbbMMVLU7WJ7F44aCkPvzr5gv5aS87gGyPqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\E5470\\Downloads\\AdventureWorkMicroservice-master\\PersonWebApi\\Application\\Person.LoggerService\\Person.LoggerService.csproj",
   "expectedPackageFiles": [

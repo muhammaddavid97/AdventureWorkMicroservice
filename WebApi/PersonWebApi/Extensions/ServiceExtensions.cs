@@ -93,6 +93,9 @@ namespace PersonWebApi.Extensions
         public static void ConfigureAuthenticationManager(this IServiceCollection services) =>
             services.AddScoped<IAuthenticationManager, AuthenticationManager>();
 
+        // configure sign up service agar bisa diinject di constructors
+        public static void ConfigureSignUpService(this IServiceCollection services) =>
+            services.AddScoped<ISignUpService, SignUpService>();
         public static void ConfigureSwagger(this IServiceCollection services)
         {
             services.AddSwaggerGen(s =>

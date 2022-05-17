@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Knle7vuC7uwiuqzNA44wvJpXdEodMl0NCJPQb7MSS0hhX31ORXsa1df5gBIBgU/2NqL7g/tlGhEOli+qNDttSQ==",
+  "dgSpecHash": "YgpdnRk49pYI9em4kKfrX8CK/PH2YOTRv09EsYjDaKgjjsLhpLBGDBU04cqJVGlCz9Yn8fLzF2GLeZjrmk+L1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\E5470\\Downloads\\AdventureWorkMicroservice-master\\PersonWebApi\\WebApi\\PersonWebApi\\PersonWebApi.csproj",
   "expectedPackageFiles": [
@@ -113,7 +113,7 @@
     "C:\\Users\\E5470\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\E5470\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\E5470\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\E5470\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+    "C:\\Users\\E5470\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
