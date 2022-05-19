@@ -1,0 +1,12 @@
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Person.Contracts.deps.json
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Person.Contracts.dll
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Person.Contracts.pdb
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Person.Contracts.csproj.AssemblyReference.cache
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Person.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Person.Contracts.AssemblyInfoInputs.cache
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Person.Contracts.AssemblyInfo.cs
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Person.Contracts.csproj.CoreCompileInputs.cache
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Person.Contracts.dll
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\refint\Person.Contracts.dll
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Person.Contracts.pdb
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\ref\Person.Contracts.dll

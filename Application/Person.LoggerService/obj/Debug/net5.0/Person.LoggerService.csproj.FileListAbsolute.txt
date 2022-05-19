@@ -1,0 +1,17 @@
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\bin\Debug\net5.0\Person.LoggerService.deps.json
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\bin\Debug\net5.0\Person.LoggerService.dll
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\bin\Debug\net5.0\Person.LoggerService.pdb
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\bin\Debug\net5.0\Persons.Contracts.dll
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\bin\Debug\net5.0\Persons.Entities.dll
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\bin\Debug\net5.0\Persons.Contracts.pdb
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\bin\Debug\net5.0\Persons.Entities.pdb
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.csproj.AssemblyReference.cache
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.AssemblyInfoInputs.cache
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.AssemblyInfo.cs
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.csproj.CoreCompileInputs.cache
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.csproj.CopyComplete
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.dll
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\refint\Person.LoggerService.dll
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\Person.LoggerService.pdb
+D:\Mini Project\PersonWebApi\Application\Person.LoggerService\obj\Debug\net5.0\ref\Person.LoggerService.dll

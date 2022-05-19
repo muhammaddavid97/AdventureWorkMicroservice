@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Persons.Contracts</AssemblyName>
+    <RootNamespace>Persons.Contracts</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Person.Entities\Persons.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

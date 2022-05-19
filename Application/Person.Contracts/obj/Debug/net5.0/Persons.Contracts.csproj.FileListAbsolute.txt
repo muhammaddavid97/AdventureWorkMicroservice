@@ -1,0 +1,15 @@
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Contracts.deps.json
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Contracts.dll
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Contracts.pdb
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Entities.dll
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\bin\Debug\net5.0\Persons.Entities.pdb
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.csproj.AssemblyReference.cache
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.AssemblyInfoInputs.cache
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.AssemblyInfo.cs
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.csproj.CoreCompileInputs.cache
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.csproj.CopyComplete
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.dll
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\refint\Persons.Contracts.dll
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\Persons.Contracts.pdb
+D:\Mini Project\PersonWebApi\Application\Person.Contracts\obj\Debug\net5.0\ref\Persons.Contracts.dll
