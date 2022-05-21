@@ -28,7 +28,7 @@ namespace Persons.Repository
 
 
         public IQueryable<T> FindByCondition(System.Linq.Expressions.Expression<Func<T, bool>> expressions, bool trackChange) =>
-             !trackChange ? repositoryContext.Set<T>().AsNoTracking().Where(expressions).AsNoTracking()
+             !trackChange ? repositoryContext.Set<T>().Where(expressions).AsNoTracking()
             : repositoryContext.Set<T>().Where(expressions);
 
         public void Update(T entity) => repositoryContext.Set<T>().Update(entity);

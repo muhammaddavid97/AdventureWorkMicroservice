@@ -22,8 +22,8 @@ namespace PersonWebApi.Controllers
             _logger = logger;
             _mapper = mapper;
         }
-/*
-       [HttpGet("{id}")]
+
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetEmailById(int id)
         {
             var emailById = await _repository.EmailAddress.GetEmailAddress(id, trackChanges: false);
@@ -37,6 +37,6 @@ namespace PersonWebApi.Controllers
                 var profilesDTO = _mapper.Map<EmailAddressDTO>(emailById);
                 return Ok(profilesDTO);
             }
-        }*/
+        }
     }
 }

@@ -11,8 +11,8 @@ namespace Persons.Contracts
     {
         IPersonRepository Person { get; }
         IProfileRepository Profile { get; }
-       /* IEmailAddressRepository EmailAddress { get; }
-        IPhoneNumberRepository PhoneNumber { get; }*/
+        IEmailAddressRepository EmailAddress { get; }
+        IPhoneNumberRepository PersonPhone { get; }
         Task saveAsync();
     }
 }

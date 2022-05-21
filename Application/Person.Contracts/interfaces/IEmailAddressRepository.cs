@@ -10,7 +10,9 @@ namespace Persons.Contracts.interfaces
 {
     public interface IEmailAddressRepository
     {
-        //Task<EmailAddress> GetEmailAddress(int id, bool trackChanges);
+
+        Task<IEnumerable<EmailAddress>> GetAllEmailAddress(bool trackChanges);
+        Task<EmailAddress> GetEmailAddress(int id, bool trackChanges);
         void CreateEmailAddress(EmailAddress emailAddress);
         void DeleteEmailAddress(EmailAddress emailAddress);
         void UpdateEmailAddress(EmailAddress emailAddress);

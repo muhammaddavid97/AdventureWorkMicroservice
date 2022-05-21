@@ -24,36 +24,73 @@ namespace Persons.Repository.Models
             _logger = logger;
         }
 
-        public async Task PostProfile(int id,ProfileDTO profileDTO)
+        public async Task<bool> PostProfile(int id, ProfileDTO profileDTO)
         {
 
-            try
-            {
-                var personEntity = await _repositoryManager.Person.GetPerson(id, trackChanges: false);
+            var personEntity = await _repositoryManager.Person.GetPerson(id, trackChanges: true);
+            personEntity.FirstName = profileDTO.FirstName;
+            personEntity.LastName = profileDTO.LastName;
+            personEntity.MiddleName = profileDTO.MiddleName;
+            personEntity.Suffix = profileDTO.Suffix;
 
-                if (personEntity == null)
+            if (personEntity == null)
+            {
+                _logger.LogError($"Person with id : {id} not found");
+            }
+
+            //_repositoryManager.Person.UpdatePerson(personEntity);
+            //await _repositoryManager.saveAsync();
+
+            foreach (var email in profileDTO.Emails)
+            {
+                try
                 {
-                    _logger.LogError($"Person with id : {id} not found");
+                    var emailEntity = await _repositoryManager.EmailAddress.GetEmailAddress(email.EmailAddressID, trackChanges: true);
+                    // memeriksa kondisi jika EmailAddress tidak ditemukan maka tambah data baru 
+
+                    if (emailEntity == null)
+                    {
+                        var emailModel = new EmailAddress();
+
+                        emailModel.EmailAddress1 = email.EmailAddress1;
+                        emailModel.BusinessEntityID = email.BusinessEntityID;
+                        emailModel.EmailAddressID = email.EmailAddressID;
+
+                        _repositoryManager.EmailAddress.CreateEmailAddress(emailModel);
+
+                    }
+                    else
+                    {
+                        emailEntity.EmailAddress1 = email.EmailAddress1;
+                        _repositoryManager.EmailAddress.UpdateEmailAddress(emailEntity);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError($"Error when insert into EmailAddress {ex.Message}");
                 }
             }
-            catch (Exception ex)
-            {
 
-                _logger.LogError($"Find person error : {id} not found {ex.Message}");
-            }
-            
+            await _repositoryManager.saveAsync();
 
-            /*Persons.Entities.Models.Person person = new Persons.Entities.Models.Person();
 
-            person.FirstName = profileDTO.FirstName;
-            person.MiddleName = profileDTO.MiddleName;
-            person.LastName = profileDTO.LastName;
-            person.Suffix = profileDTO.Suffix;
-            person.BusinessEntityID = profileDTO.BusinessEntityID;*/
-           
+            /*  foreach (var phone in profileDTO.PersonPhones)
+              {
+                  var phoneEntityById = await _repositoryManager.PersonPhone.GetPersonPhone(id, trackChanges: false);
 
-            //_repositoryManager.Person.UpdatePerson(person);
-            //_repositoryManager.saveAsync();
+                  if (phoneEntityById == null)
+                  {
+                      phoneEntityById.BusinessEntityID = phone.BusinessEntityID;
+                      phoneEntityById.PhoneNumber = phone.PhoneNumber;
+                      phoneEntityById.PhoneNumberTypeID = phone.PhoneNumberTypeID;
+                  }
+
+                  _repositoryManager.PersonPhone.CreatePersonPhone(phoneEntityById);
+                 // _repositoryManager.saveAsync();
+              }*/
+
+            return true;
+
         }
     }
 }

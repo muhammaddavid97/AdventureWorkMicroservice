@@ -30,7 +30,7 @@ namespace Persons.Repository.Models
         public async Task<Persons.Entities.Models.Person> GetProfile(int id, bool trackChanges) =>
            await FindByCondition(c => c.BusinessEntityID.Equals(id), trackChanges).SingleOrDefaultAsync();
 
-        public void UpdatePerson(Entities.Models.Person person)
+        public void UpdateProfile(Entities.Models.Person person)
         {
             Update(person);
         }

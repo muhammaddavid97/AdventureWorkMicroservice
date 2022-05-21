@@ -15,8 +15,8 @@ namespace Persons.Repository
         private RepositoryContext _repositoryContext;
         private IPersonRepository _personRepository;
         private IProfileRepository _profileRepository;
-      /*  private IEmailAddressRepository _emailAddressRepository;
-        private IPhoneNumberRepository _phoneNumberRepository;*/
+        private IEmailAddressRepository _emailAddressRepository;
+        private IPhoneNumberRepository _phoneNumberRepository;
 
         public RepositoryManager(RepositoryContext repositoryContext)
         {
@@ -49,32 +49,32 @@ namespace Persons.Repository
             }
         }
 
-      /*  public IEmailAddressRepository EmailAddress
+        public IEmailAddressRepository EmailAddress
         {
             get
             {
-                if (_personRepository == null)
+                if ( _emailAddressRepository == null)
                 {
-                    _emailAddressRepository = new EmailAddressRepository(_repositoryContext); 
+                    _emailAddressRepository = new EmailAddressRepository(_repositoryContext);
                 }
 
                 return _emailAddressRepository;
             }
         }
 
-        public IPhoneNumberRepository PhoneNumber
+        public IPhoneNumberRepository PersonPhone
         {
             get
             {
                 if (_phoneNumberRepository == null)
                 {
-                    _phoneNumberRepository =  new PhoneNumberRepository(_repositoryContext);
+                    _phoneNumberRepository = new PhoneNumberRepository(_repositoryContext);
                 }
 
                 return _phoneNumberRepository;
             }
         }
-*/
+
         public async Task saveAsync() => 
             await _repositoryContext.SaveChangesAsync();
     }

@@ -55,14 +55,19 @@ namespace PersonWebApi.Controllers
                 }
 
             
-            _serviceProfile.PostProfile(id,profileDTO);
-            //var profileEntity = _mapper.Map<Persons.Entities.Models.Person>(profileDTO);
-            // _repository.Profile.CreateProfile(profileEntity);
-            //await _repository.saveAsync();
+            
+            var result = await _serviceProfile.PostProfile(id, profileDTO);
+          
 
-            //var profileResult = _mapper.Map<ProfileDTO>(profileEntity);
+            if (result)
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest($"unable to post data");
+            }
 
-            return Ok();
         }
 
         [HttpPut("{id}")]
@@ -76,7 +81,7 @@ namespace PersonWebApi.Controllers
             }
 
             // find profile by id
-            var profileEntity = _repository.Profile.GetProfile(id, trackChanges: true);
+            var profileEntity = await _repository.Profile.GetProfile(id, trackChanges: true);
 
             return Ok(profileEntity);
            /* if (profileEntity == null)

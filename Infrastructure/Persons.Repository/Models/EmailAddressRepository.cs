@@ -18,24 +18,27 @@ namespace Persons.Repository.Models
 
         public void CreateEmailAddress(EmailAddress emailAddress)
         {
-            CreateEmailAddress(emailAddress);
+            Create(emailAddress);
         }
 
         public void DeleteEmailAddress(EmailAddress emailAddress)
         {
-            DeleteEmailAddress(emailAddress);
+            Delete(emailAddress);
         }
 
-        /*public Task<EmailAddress> GetEmailAddress(int id, bool trackChanges)
+        public async Task<EmailAddress> GetEmailAddress(int id, bool trackChanges)
         {
-            throw new NotImplementedException();
-        }*/
+            return await FindByCondition(c => c.EmailAddressID.Equals(id), trackChanges).SingleOrDefaultAsync();
+        }
 
-        /* public IEnumerable<EmailAddress> GetAll*/
+        public async Task<IEnumerable<EmailAddress>> GetAllEmailAddress(bool trackChanges) =>
+            await FindAll(trackChanges)
+                    .OrderBy(c => c.EmailAddressID)
+                    .ToListAsync();
 
         public void UpdateEmailAddress(EmailAddress emailAddress)
         {
-            UpdateEmailAddress(emailAddress);
+            Update(emailAddress);
         }
     }
 }

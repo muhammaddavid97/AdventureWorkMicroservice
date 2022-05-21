@@ -9,6 +9,6 @@ namespace Persons.Contracts.interfaces
 {
     public interface IServiceProfile
     {
-        Task PostProfile(int id,ProfileDTO profileDTO);
+        Task<bool> PostProfile(int id,ProfileDTO profileDTO);
     }
 }

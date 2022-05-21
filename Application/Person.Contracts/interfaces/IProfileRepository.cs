@@ -10,5 +10,6 @@ namespace Persons.Contracts.interfaces
     {
         Task<Persons.Entities.Models.Person> GetProfile(int id, bool trackChanges);
         void CreateProfile(Persons.Entities.Models.Person person);
+        void UpdateProfile(Persons.Entities.Models.Person person);
     }
 }
