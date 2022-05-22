@@ -1,0 +1,15 @@
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Person.Entities.deps.json
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Person.Entities.runtimeconfig.json
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Person.Entities.runtimeconfig.dev.json
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Person.Entities.dll
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Person.Entities.pdb
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.csproj.AssemblyReference.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.AssemblyInfoInputs.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.AssemblyInfo.cs
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.csproj.CoreCompileInputs.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.dll
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\refint\Person.Entities.dll
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.pdb
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Person.Entities.genruntimeconfig.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\ref\Person.Entities.dll

@@ -1,0 +1,60 @@
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.AssemblyReference.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfoInputs.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfo.cs
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.CoreCompileInputs.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.deps.json
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.json
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.dev.json
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.dll
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.pdb
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.dll
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\refint\Persons.Entities.dll
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.pdb
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.genruntimeconfig.cache
+D:\Mini Project\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\ref\Persons.Entities.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.deps.json
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.json
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.dev.json
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.AssemblyReference.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfoInputs.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfo.cs
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.CoreCompileInputs.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\refint\Persons.Entities.dll
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.pdb
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.genruntimeconfig.cache
+C:\Users\E5470\Downloads\AdventureWorkMicroservice-master\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\ref\Persons.Entities.dll
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.deps.json
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.json
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.dev.json
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.dll
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.pdb
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.AssemblyReference.cache
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfoInputs.cache
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfo.cs
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.CoreCompileInputs.cache
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.dll
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\refint\Persons.Entities.dll
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.pdb
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.genruntimeconfig.cache
+C:\Users\dotNet\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\ref\Persons.Entities.dll
+C:\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.deps.json
+C:\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.json
+C:\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.runtimeconfig.dev.json
+C:\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.dll
+C:\PersonWebApi\Domain\Person.Entities\bin\Debug\net5.0\Persons.Entities.pdb
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.AssemblyReference.cache
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfoInputs.cache
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.AssemblyInfo.cs
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.csproj.CoreCompileInputs.cache
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.dll
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\refint\Persons.Entities.dll
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.pdb
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\Persons.Entities.genruntimeconfig.cache
+C:\PersonWebApi\Domain\Person.Entities\obj\Debug\net5.0\ref\Persons.Entities.dll
