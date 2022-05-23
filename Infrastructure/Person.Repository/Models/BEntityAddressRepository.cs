@@ -16,12 +16,12 @@ namespace Persons.Repository.Models
         {
         }
 
-        public void CreateEmailAsync(BusinessEntityAddress beAddress)
+        public void CreateBeAddressAsync(BusinessEntityAddress beAddress)
         {
             Create(beAddress);
         }
 
-        public void DeleteEmailAsync(BusinessEntityAddress beAddress)
+        public void DeleteBeAddressAsync(BusinessEntityAddress beAddress)
         {
             Delete(beAddress);
         }
@@ -36,7 +36,7 @@ namespace Persons.Repository.Models
         public async Task<BusinessEntityAddress> GetBeAddressAsync(int beId, bool trackChanges) =>
             await FindByCondition(c => c.BusinessEntityID.Equals(beId), trackChanges).SingleOrDefaultAsync();
 
-        public void UpdateEmailAsync(BusinessEntityAddress beAddress)
+        public void UpdateBeAddressAsync(BusinessEntityAddress beAddress)
         {
             Update(beAddress);
         }

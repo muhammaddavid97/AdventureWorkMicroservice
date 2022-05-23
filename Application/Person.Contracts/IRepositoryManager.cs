@@ -14,6 +14,7 @@ namespace Persons.Contracts
         IAddressRepository Address { get; }
         IEmailRepository Email { get; }
         IPhoneNumberRepository PhoneNumber { get; }
+        IPhoneTypeRepository PhoneType { get; }
         IPasswordRepository Password { get; }
         IPersonTypeRepository PersonTypesView { get; }
         IRegionPersonRepository RegionPersonView { get; }

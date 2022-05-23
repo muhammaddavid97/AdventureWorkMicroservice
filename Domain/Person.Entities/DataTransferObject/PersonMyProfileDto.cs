@@ -20,6 +20,6 @@ namespace Persons.Entities.DataTransferObject
         [Required(ErrorMessage = "Email is required")]
         public ICollection<string> Email { get; set; }
         public ICollection<PhoneNumberDto> PhoneNumber { get; set; }
-        public ICollection<AddressDto> Address { get; set; }
+        public List<AddressDto> Address { get; set; }
     }
 }

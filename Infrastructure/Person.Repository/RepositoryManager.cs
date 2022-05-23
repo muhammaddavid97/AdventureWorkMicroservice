@@ -19,6 +19,7 @@ namespace Persons.Repository
         private IBeAddressRepository _bEntityAddressRepository;
         private IEmailRepository _emailRepository;
         private IPhoneNumberRepository _phoneNumberRepository;
+        private IPhoneTypeRepository _phoneTypeRepository;
         private IPasswordRepository _passwordRepository;
         private IPersonTypeRepository _personTypeRepository;
         private IRegionPersonRepository _regionPersonRepository;
@@ -98,6 +99,18 @@ namespace Persons.Repository
                     _phoneNumberRepository = new PhoneNumberRepository(_repositoryContext);
                 }
                 return _phoneNumberRepository;
+            }
+        }
+
+        public IPhoneTypeRepository PhoneType
+        {
+            get
+            {
+                if (_phoneTypeRepository == null)
+                {
+                    _phoneTypeRepository = new PhoneTypeRepository(_repositoryContext);
+                }
+                return _phoneTypeRepository;
             }
         }
 

@@ -11,12 +11,13 @@ namespace Persons.Contracts
     public interface IProfileService
     {
         Task<bool> SaveAll(int businessEntityId, PersonMyProfileDto profileDto);
+        
 
-        Task<IEnumerable<EmailAddress>> GetEmailByEmailAsync(int businessEntityId);
+        /*Task<IEnumerable<EmailAddress>> GetEmailByEmailAsync(int businessEntityId);
         Task<IEnumerable<PersonPhone>> GetPhoneNumberByBEIdAsync(int businessEntityId);
         Task<IEnumerable<BusinessEntityAddress>> GetAddressTypeByBEIdAsync(int businessEntityId);
         Task<IEnumerable<Address>> GetAddressByBEIdAsync(int addressId);
-        Task<IEnumerable<StateProvince>> GetStateProvinceByBEIdAsync(int stateProvinceId);
+        Task<IEnumerable<StateProvince>> GetStateProvinceByBEIdAsync(int stateProvinceId);*/
 
     }
 }

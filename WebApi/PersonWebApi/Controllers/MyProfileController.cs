@@ -16,15 +16,13 @@ namespace PersonWebApi.Controllers
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
-        private readonly IServicePerson _servicePerson;
         private readonly IProfileService _profileService;
 
-        public MyProfileController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, IServicePerson servicePerson, IProfileService profileService)
+        public MyProfileController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, IProfileService profileService)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
-            _servicePerson = servicePerson;
             _profileService = profileService;
         }
 

@@ -9,5 +9,6 @@ namespace Persons.Entities.DataTransferObject
     public class BusinessEntityAddressDto
     {
         public int AddressTypeID { get; set; }
+        public string Name { get; set; }
     }
 }

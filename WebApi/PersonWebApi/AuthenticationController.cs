@@ -46,6 +46,7 @@ namespace PersonWebApi
 
             var createUser = await _userManager.CreateAsync(user, personSignUp.Password);
 
+            // Validare saat create user success atau engga
             if (!createUser.Succeeded)
             {
                 foreach (var error in createUser.Errors)

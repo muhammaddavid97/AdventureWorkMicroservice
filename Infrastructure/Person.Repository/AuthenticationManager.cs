@@ -36,6 +36,7 @@ namespace Persons.Repository
             return new JwtSecurityTokenHandler().WriteToken(tokenOptions);
         }
 
+        // Ngebentuk token
         private SigningCredentials GetSigningCredentials()
         {
             var key = Encoding.UTF8.GetBytes(Environment.GetEnvironmentVariable("SECRET"));
@@ -43,6 +44,7 @@ namespace Persons.Repository
             return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
         }
 
+        // Masukin data dari user yang mau disisipkan di dalem token
         private async Task<List<Claim>> GetClaims()
         {
             var claims = new List<Claim>
@@ -59,6 +61,7 @@ namespace Persons.Repository
             return claims;
         }
 
+        // Option untuk setting token
         private JwtSecurityToken GenerateTokenOptions(SigningCredentials signingCredentials, List<Claim> claims)
         {
             var jwtSettings = _configuration.GetSection("JwtSettings");

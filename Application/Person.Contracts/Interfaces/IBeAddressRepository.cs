@@ -11,8 +11,8 @@ namespace Persons.Contracts.Interfaces
     {
         Task<IEnumerable<BusinessEntityAddress>> GetAllBeAddressAsync(bool trackChanges);
         Task<BusinessEntityAddress> GetBeAddressAsync(int beId, bool trackChanges);
-        void CreateEmailAsync(BusinessEntityAddress beAddress);
-        void DeleteEmailAsync(BusinessEntityAddress beAddress);
-        void UpdateEmailAsync(BusinessEntityAddress beAddress);
+        void CreateBeAddressAsync(BusinessEntityAddress beAddress);
+        void DeleteBeAddressAsync(BusinessEntityAddress beAddress);
+        void UpdateBeAddressAsync(BusinessEntityAddress beAddress);
     }
 }
