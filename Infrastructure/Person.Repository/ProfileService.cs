@@ -108,7 +108,7 @@ namespace Persons.Repository
             // Mengecek kondisi dimana jumlah dari input untuk email tidak sama dengan jumlah data email di database
             if (profileDto.Email.Count != objEmail.Count())
             {
-                // Kondisi untuk Create / add dan edit email
+                // Kondisi untuk Add email
                 if (profileDto.Email.Count > objEmail.Count())
                 {
                     foreach (var itemEmail in profileDto.Email)
@@ -141,20 +141,28 @@ namespace Persons.Repository
                         }
                     }
                 }
-                // Kondisi untuk delete dan edit email
+                // Kondisi untuk Delete email
                 if (profileDto.Email.Count < objEmail.Count())
                 {
                     foreach (var itemEmail in profileDto.Email) 
                     {
-                        var emailDelete = _repository.Email.GetAllEmailAsync(trackChanges: true).Result.Where(e=>e.BusinessEntityID == businessEntityId);
-
-                        foreach (var item in emailDelete)
+                        try
                         {
-                            if(item.EmailAddress1 != itemEmail)
+                            var emailDelete = _repository.Email.GetAllEmailAsync(trackChanges: true).Result.Where(e => e.BusinessEntityID == businessEntityId);
+
+                            foreach (var item in emailDelete)
                             {
-                                _repository.Email.DeleteEmailAsync(item);
-                                _repository.SaveAsync();
+                                if (item.EmailAddress1 != itemEmail)
+                                {
+                                    _repository.Email.DeleteEmailAsync(item);
+                                    _repository.SaveAsync();
+                                }
                             }
+                        }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError($"Error when insert into EmailAddress {ex.Message}");
+                            return false;
                         }
                     }
                 }
@@ -167,7 +175,6 @@ namespace Persons.Repository
                 {
                     try
                     {
-                        //var emailEntity = await _repository.Email.GetEmailAsync(itemEmail, trackChanges: true);
                         var emailEntity = _repository.Email.GetAllEmailAsync(trackChanges: true).Result.Where(e => e.BusinessEntityID == businessEntityId );
                         foreach(var item in emailEntity)
                         {
@@ -178,7 +185,6 @@ namespace Persons.Repository
                                 await _repository.SaveAsync();  
                             }
                         }
-                        
                     }
                     catch (Exception ex)
                     {
@@ -189,7 +195,67 @@ namespace Persons.Repository
             }
 
             // Tabel PersonPhone
+            // Pada PhoneNumber hanya dapat Create dan Delete. Tidak dapat edit
             var objPhone = _repository.PhoneNumber.GetAllPhoneNumberAsync(trackChanges: true).Result.Where(p => p.BusinessEntityID == personEntity.BusinessEntityID);
+            // Mengecek kondisi dimana jumlah dari input untuk phone number tidak sama dengan jumlah data email di database
+            if (profileDto.PhoneNumber.Count != objPhone.Count())
+            {
+                // Kondisi untuk Add PhoneNumber
+                if (profileDto.PhoneNumber.Count > objPhone.Count())
+                {
+                    foreach (var itemPhone in profileDto.PhoneNumber)
+                    {
+                        try
+                        {
+                            var phoneEntity = await _repository.PhoneNumber.GetPhoneNumberAsync(businessEntityId, trackChanges: true);
+                            var phoneNumberModel = new PersonPhone();
+                            // Kondisi ADD phone number
+                            if (itemPhone != objPhone)
+                            {
+                                phoneNumberModel.PhoneNumber = itemPhone.PhoneNumber;
+                                phoneNumberModel.PhoneNumberTypeID = itemPhone.PhoneNumberTypeID;
+                                phoneNumberModel.BusinessEntityID = businessEntityId;
+
+                                _repository.PhoneNumber.CreatePhoneNumberAsync(phoneNumberModel);
+                                await _repository.SaveAsync();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError($"Error when insert into Table PersonPhone {ex.Message}");
+                            return false;
+                        }
+                    }
+                }
+                // Kondisi untuk Delete PhoneNumber
+                if (profileDto.PhoneNumber.Count < objPhone.Count())
+                {
+                    foreach (var itemPhone in profileDto.PhoneNumber)
+                    {
+                        try
+                        {
+                            var phoneDelete = _repository.PhoneNumber.GetAllPhoneNumberAsync(trackChanges: true).Result.Where(p => p.BusinessEntityID == businessEntityId);
+
+                            foreach (var item in phoneDelete)
+                            {
+                                if (item.PhoneNumber != itemPhone.PhoneNumber)
+                                {
+                                    _repository.PhoneNumber.DeletePhoneNumberAsync(item);
+                                    _repository.SaveAsync();
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError($"Error when insert into Table PersonPhone {ex.Message}");
+                            return false;
+                        }
+                    }
+                }
+            }
+            
+            // Tabel Address
+
 
             //jangan di hapus 
             return true;

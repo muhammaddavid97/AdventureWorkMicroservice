@@ -28,9 +28,6 @@ namespace Persons.Entities.DataTransferObject
         [Required(ErrorMessage = "Phone Number is required")]
         public string PhoneNumber { get; set; }
 
-        [Required(ErrorMessage = "Phone Number Type is required")]
-        public int PhoneNumberType { get; set; }
-
         [MaxLength(2)]
         public string PersonType { get; set; }
 

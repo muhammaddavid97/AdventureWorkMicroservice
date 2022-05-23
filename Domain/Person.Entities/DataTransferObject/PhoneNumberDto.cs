@@ -12,7 +12,7 @@ namespace Persons.Entities.DataTransferObject
     {
         [Required(ErrorMessage = "Phone Number is required")]
         public string PhoneNumber { get; set; }
-        [Required(ErrorMessage = "Phone Number Type is required")]
-        public int PhoneNumberTypes { get; set; }
+        [Required(ErrorMessage = "Phone Number Type ID is required")]
+        public int PhoneNumberTypeID { get; set; }
     }
 }

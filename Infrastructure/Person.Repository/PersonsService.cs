@@ -63,7 +63,7 @@ namespace Persons.Repository
 
                 phone.BusinessEntityID = businessEntity.BusinessEntityID;
                 phone.PhoneNumber = signUpDto.PhoneNumber;
-                phone.PhoneNumberTypeID = signUpDto.PhoneNumberType;
+                phone.PhoneNumberTypeID = 1;
                 _repository.PhoneNumber.CreatePhoneNumberAsync(phone);
                 await _repository.SaveAsync();
                 
