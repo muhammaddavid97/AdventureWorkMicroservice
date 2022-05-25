@@ -17,8 +17,7 @@ namespace Persons.Entities.DataTransferObject
         public int BusinessEntityID { get; set; }
         public ICollection<EmailAddress> Emails { get; set; }
         public ICollection<PersonPhone> PersonPhones { get; set; }
-        public int AddressTypeID { get; set; }
-
-        public int AddressID { get; set; }
+        //public ICollection<BusinessEntityAddress> AddressType { get; set; }
+        //public ICollection<Address> Address { get; set; }
     }
 }

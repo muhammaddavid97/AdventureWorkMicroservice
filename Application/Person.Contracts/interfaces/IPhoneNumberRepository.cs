@@ -10,8 +10,9 @@ namespace Persons.Contracts.interfaces
     public interface IPhoneNumberRepository
     {
         //Task<IEnumerable<PersonPhone>> GetAllPersonPhone(bool trackChanges);
-        Task<PersonPhone> GetPersonPhone(int id, bool trackChanges);
+        Task<PersonPhone> GetPersonPhone(string phoneNumber, bool trackChanges);
         void CreatePersonPhone(PersonPhone personPhone);
         void DeletePersonPhone(PersonPhone personPhone);
+        void UpdatePersonPhone(PersonPhone personPhone);
     }
 }

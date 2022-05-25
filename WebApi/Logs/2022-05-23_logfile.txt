@@ -1,0 +1,18 @@
+2022-05-23 03:24:03.1455 ERROR Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Persons.Entities.Models.PhoneNumberType, Persons.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Persons.Entities.DataTransferObject.PhoneNumberTypeDTO, Persons.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2022-05-23 06:49:23.3627 INFO data sudah di simpan di database
+2022-05-23 06:49:27.5837 INFO data sudah di simpan di database
+2022-05-23 06:56:23.2048 INFO data sudah di simpan di database
+2022-05-23 06:56:29.3548 INFO data sudah di simpan di database
+2022-05-23 06:58:47.7458 INFO data sudah di simpan di database
+2022-05-23 06:58:58.4040 INFO data sudah di simpan di database
+2022-05-23 20:20:55.9820 INFO Customer with id : 107 doesn't exist in database
+2022-05-23 21:13:33.5151 INFO Phone Number with phone number : 021021033
+ doesn't exist in database
+2022-05-23 21:16:00.9553 INFO Phone Number with phone number : 021111033
+ doesn't exist in database
+2022-05-23 21:19:31.7527 INFO Phone Number with phone number : 021111033
+ doesn't exist in database

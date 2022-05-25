@@ -31,8 +31,8 @@ namespace Persons.Repository.Models
            
         }*/
 
-        public async Task<PersonPhone> GetPersonPhone(int id, bool trackChanges) =>
-            await FindByCondition(c => c.BusinessEntityID.Equals(id), trackChanges).SingleOrDefaultAsync();
+        public async Task<PersonPhone> GetPersonPhone(string phoneNumber, bool trackChanges) =>
+            await FindByCondition(c => c.PhoneNumber.Equals(phoneNumber), trackChanges).SingleOrDefaultAsync();
 
         public void UpdatePersonPhone(PersonPhone personPhone)
         {

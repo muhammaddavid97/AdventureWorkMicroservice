@@ -6,6 +6,8 @@ using Persons.Contracts;
 using Persons.Contracts.interfaces;
 using Persons.Entities.DataTransferObject;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PersonWebApi.Controllers
@@ -27,14 +29,14 @@ namespace PersonWebApi.Controllers
             _serviceProfile = serviceProfile;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetProfileById(int id)
+        [HttpGet("{profileId}", Name = "profileById")]
+        public async Task<IActionResult> GetProfileById(int profileId)
         {
-            var profiles = await _repository.Person.GetPerson(id, trackChanges: false);
+            var profiles = await _repository.Person.GetPerson(profileId, trackChanges: false);
 
             if (profiles == null)
             {
-                _logger.LogInfo("Profile with Id : " + id + "does'nt exists");
+                _logger.LogInfo("Profile with Id : " + profileId + "does'nt exists");
                 return NotFound();
             }
             else
@@ -53,48 +55,11 @@ namespace PersonWebApi.Controllers
                     _logger.LogError("Category object is null");
                     return BadRequest("Category object is null");
                 }
-
-            
             
             var result = await _serviceProfile.PostProfile(id, profileDTO);
-          
+            
+            return CreatedAtRoute("profileById", new { profileId = id }, result);
 
-            if (result)
-            {
-                return Ok();
-            }
-            else
-            {
-                return BadRequest($"unable to post data");
-            }
-
-        }
-
-        [HttpPut("{id}")]
-
-        public async Task<IActionResult> UpdateProfile(int id, [FromBody] ProfileDTO profileDTO)
-        {
-            if (profileDTO == null)
-            {
-                _logger.LogError($"Category must not be null");
-                return BadRequest("Category must not be null");
-            }
-
-            // find profile by id
-            var profileEntity = await _repository.Profile.GetProfile(id, trackChanges: true);
-
-            return Ok(profileEntity);
-           /* if (profileEntity == null)
-            {
-                _logger.LogInfo($"Category with id : {id} not found");
-                return NotFound();
-            }
-
-            _mapper.Map(profileDTO, profileEntity);
-            // _repository.Category.UpdateCategory(categoryEntity);
-
-            _repository.saveAsync();
-            return NoContent();*/
         }
     }
 }

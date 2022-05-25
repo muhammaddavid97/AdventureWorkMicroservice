@@ -13,6 +13,12 @@ namespace Persons.Contracts
         IProfileRepository Profile { get; }
         IEmailAddressRepository EmailAddress { get; }
         IPhoneNumberRepository PersonPhone { get; }
+        IAddressTypeRepository AddressType { get; }
+        IStateProvinceRepository StateProvince { get; }
+        IPhoneNumberTypeRepository PhoneNumberType { get; }
+        IBusinessEntityAddressRepository BusinessEntityAddress { get; }
+        IAddressRepository Address { get; }
+        IPersonTypeRepository PersonType { get; }
         Task saveAsync();
     }
 }

@@ -17,6 +17,12 @@ namespace Persons.Repository
         private IProfileRepository _profileRepository;
         private IEmailAddressRepository _emailAddressRepository;
         private IPhoneNumberRepository _phoneNumberRepository;
+        private IAddressTypeRepository _addressTypeRepository;
+        private IStateProvinceRepository _stateProvinceRepository;
+        private IPhoneNumberTypeRepository _phoneNumberTypeRepository;
+        private IBusinessEntityAddressRepository _businessEntityAddressRepository;
+        private IAddressRepository _addressRepository;
+        private IPersonTypeRepository _personTypeRepository;
 
         public RepositoryManager(RepositoryContext repositoryContext)
         {
@@ -72,6 +78,84 @@ namespace Persons.Repository
                 }
 
                 return _phoneNumberRepository;
+            }
+        }
+
+        public IAddressTypeRepository AddressType
+        {
+            get
+             {
+                if (_addressTypeRepository == null)
+                {
+                    _addressTypeRepository = new AddressTypeIdRepository(_repositoryContext);
+                }
+
+                return _addressTypeRepository;
+            }
+        }
+
+        public IStateProvinceRepository StateProvince
+        {
+            get
+            {
+                if (_stateProvinceRepository == null)
+                {
+                    _stateProvinceRepository = new StateProvinceRepository(_repositoryContext);
+                }
+
+                return _stateProvinceRepository;
+            }
+        }
+
+        public IPhoneNumberTypeRepository PhoneNumberType
+        {
+            get
+            {
+                if (_phoneNumberTypeRepository == null)
+                {
+                    _phoneNumberTypeRepository = new PhoneNumberTypeRepository(_repositoryContext);
+                }
+
+                return _phoneNumberTypeRepository; ;
+            }
+        }
+
+        public IBusinessEntityAddressRepository BusinessEntityAddress
+        {
+            get
+            {
+                if (_businessEntityAddressRepository == null)
+                {
+                    _businessEntityAddressRepository = new BusinessEntityAddressRepository(_repositoryContext);
+                }
+
+                return _businessEntityAddressRepository;
+            }
+        }
+
+        public IAddressRepository Address
+        {
+            get
+            {
+                if (_addressRepository == null)
+                {
+                    _addressRepository = new AddressRepository(_repositoryContext);
+                }
+
+                return _addressRepository;
+            }
+        }
+
+        public IPersonTypeRepository PersonType
+        {
+            get
+            {
+                if (_personTypeRepository == null)
+                {
+                    _personTypeRepository = new PersonTypeRepository(_repositoryContext);
+                }
+
+                return _personTypeRepository;
             }
         }
 

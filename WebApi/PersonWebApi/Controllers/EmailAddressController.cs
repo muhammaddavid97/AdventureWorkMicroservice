@@ -23,20 +23,22 @@ namespace PersonWebApi.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetEmailById(int id)
+        [HttpDelete("{id}")]
+
+        public async Task<IActionResult> DeleteEmailAddress(int id)
         {
-            var emailById = await _repository.EmailAddress.GetEmailAddress(id, trackChanges: false);
-            if (emailById == null)
+            var emailAddress = await _repository.EmailAddress.GetEmailAddress(id, trackChanges: false);
+
+            if (emailAddress == null)
             {
-                _logger.LogInfo("Profile with Id : " + id + "doesn't exists");
+                _logger.LogInfo($"Customer with id : {id} doesn't exist in database");
                 return NotFound();
             }
-            else
-            {
-                var profilesDTO = _mapper.Map<EmailAddressDTO>(emailById);
-                return Ok(profilesDTO);
-            }
+
+            _repository.EmailAddress.DeleteEmailAddress(emailAddress);
+            await _repository.saveAsync();
+            return Ok("Sukses deleted in database");
+
         }
-    }
+    } 
 }

@@ -13,6 +13,9 @@ namespace PersonWebApi.Mapping
             CreateMap<Persons.Entities.Models.Person, ProfileDTO>();
             CreateMap<EmailAddressDTO, EmailAddress>().ReverseMap();
             CreateMap<EmailAddress, EmailAddressDTO>();
+            CreateMap<PhoneNumberTypeDTO, PhoneNumberType>().ReverseMap();
+            CreateMap<AddressTypeDTO, AddressType>().ReverseMap();
+            CreateMap<AddressType, AddressTypeDTO>();
         }
     }
 }

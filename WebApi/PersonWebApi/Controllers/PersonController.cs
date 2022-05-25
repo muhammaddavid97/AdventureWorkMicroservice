@@ -29,7 +29,7 @@ namespace PersonWebApi.Controllers
         public async Task<IActionResult> GetAllPerson()
         {
             var profiles = await _repository.Person.GetAllPerson(trackChanges : false);
-            var profilesDTO = _mapper.Map<IEnumerable<ProfileDTO>>(profiles);
+            var profilesDTO = _mapper.Map<IEnumerable<PersonModelDTO>>(profiles);
             return Ok(profilesDTO); 
         }
 
