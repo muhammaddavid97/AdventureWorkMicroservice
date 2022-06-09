@@ -18,7 +18,7 @@ namespace Persons.Entities.DataTransferObject
         public string LastName { get; set; }
         public string Suffix { get; set; }
         [Required(ErrorMessage = "Email is required")]
-        public ICollection<string> Email { get; set; }
+        public ICollection<EmailDto> Email { get; set; }
         public ICollection<PhoneNumberDto> PhoneNumber { get; set; }
         public List<AddressDto> Address { get; set; }
     }

@@ -20,7 +20,6 @@ namespace Persons.Repository
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _configuration;
         private User _user;
-        private Person _person;
 
         public AuthenticationManager(UserManager<User> userManager, IConfiguration configuration)
         {

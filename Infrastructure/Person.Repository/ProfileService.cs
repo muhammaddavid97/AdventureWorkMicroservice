@@ -53,7 +53,7 @@ namespace Persons.Repository
 
                             foreach (var itemEmailData in emailEntity)
                             {
-                                if (itemEmail == itemEmailData.EmailAddress1)
+                                if (itemEmail.EmailAddress1 == itemEmailData.EmailAddress1)
                                 {
                                     isFound = true;
                                     break;
@@ -63,7 +63,7 @@ namespace Persons.Repository
                             if (isFound == false)
                             {
                                 var emailModel = new EmailAddress();
-                                emailModel.EmailAddress1 = itemEmail;
+                                emailModel.EmailAddress1 = itemEmail.EmailAddress1;
                                 emailModel.BusinessEntityID = businessEntityId;
 
                                 _repository.Email.CreateEmailAsync(emailModel);
@@ -89,7 +89,7 @@ namespace Persons.Repository
 
                             foreach (var itemEmail in profileDto.Email)
                             {
-                                if (itemEmail == item.EmailAddress1)
+                                if (itemEmail.EmailAddress1 == item.EmailAddress1)
                                 {
                                     isFound = true;
                                     break;
@@ -111,31 +111,23 @@ namespace Persons.Repository
             }
             // Mengecek kondisi dimana kalo jumlah dari input untuk email sama dengan jumlah data email di database
             // Kalo sama dan ada data yang beda maka diupdate
-            /*else if (profileDto.Email.Count == objEmail.Count())
+            else if (profileDto.Email.Count == objEmail.Count())
             {
                 var emailUpdate = _repository.Email.GetAllEmailAsync(trackChanges: true).Result.Where(e => e.BusinessEntityID == businessEntityId);
-                foreach (var itemDb in emailUpdate)
+                foreach (var itemDto in profileDto.Email)
                 {
-                    bool isFound = false;
-                    foreach (var itemDto in profileDto.Email)
+                    foreach (var itemDb in emailUpdate)
                     {
-                        if (itemDb.EmailAddress1 == itemDto)
+                        if (itemDto.EmailAddress1 != itemDb.EmailAddress1 && itemDto.EmailAddressID == itemDb.EmailAddressID)
                         {
-                            isFound = true;
+                            itemDb.EmailAddress1 = itemDto.EmailAddress1;
+                            _repository.Email.UpdateEmailAsync(itemDb);
+                            await _repository.SaveAsync();
                             break;
                         }
-
-                    }
-                    if (isFound == false)
-                    {
-                        string dtoEmail = "";
-
-                        itemDb.EmailAddress1 = dtoEmail;
-                        _repository.Email.UpdateEmailAsync(itemDb);
-                        await _repository.SaveAsync();
                     }
                 }
-            }*/
+            }
 
             // Tabel PersonPhone
             // Pada PhoneNumber hanya dapat Create dan Delete. Tidak dapat edit!
@@ -215,7 +207,7 @@ namespace Persons.Repository
             }
 
             // Tabel Address
-            /*var objAddress = _repository.BeAddress.GetAllBeAddressAsync(trackChanges: true).Result.Where(a => a.BusinessEntityID == personEntity.BusinessEntityID);
+            var objAddress = _repository.BeAddress.GetAllBeAddressAsync(trackChanges: true).Result.Where(a => a.BusinessEntityID == personEntity.BusinessEntityID);
             // Mengecek kondisi dimana jumlah dari input untuk address tidak sama dengan jumlah data email di database
             if (profileDto.Address.Count != objAddress.Count())
             {
@@ -223,9 +215,9 @@ namespace Persons.Repository
                 if (profileDto.Address.Count > objAddress.Count())
                 {
                     var addressEntity = _repository.BeAddress.GetAllBeAddressAsync(trackChanges: true).Result.Where(a => a.BusinessEntityID == personEntity.BusinessEntityID);
-
+                    
                     // Kondisi jika Address null maka akan create
-                    if (addressEntity == null)
+                    if (addressEntity.Count() == 0)
                     {
                         try
                         {
@@ -236,6 +228,8 @@ namespace Persons.Repository
                                 var newState = new StateProvince();
 
                                 newAddress.StateProvinceID = itemAddressDto.StateProvinceID;
+                                newAddress.City = itemAddressDto.City;
+                                newAddress.PostalCode = itemAddressDto.PostalCode;
                                 newAddress.AddressLine1 = itemAddressDto.AddressLine1;
                                 _repository.Address.CreateAddressAsync(newAddress);
                                 await _repository.SaveAsync();
@@ -245,10 +239,7 @@ namespace Persons.Repository
                                 newBEAddress.AddressID = newAddress.AddressID;
                                 _repository.BeAddress.CreateBeAddressAsync(newBEAddress);
                                 await _repository.SaveAsync();
-
-                                newState.CountryRegionCode = itemAddressDto.CountryRegionCode;
-                                _repository.StateProvince.CreateStateProvincevAsync(newState);
-                                await _repository.SaveAsync();
+                                return true;
                             }
                         }
                         catch (Exception ex)
@@ -266,8 +257,9 @@ namespace Persons.Repository
 
                             foreach (var itemAddressData in addressEntity)
                             {
+                                var address =await _repository.Address.GetAddressAsync(itemAddressData.AddressID, trackChanges: false);
                                 if (inputItemAddress.AddressTypeID == itemAddressData.AddressTypeID
-                                    && inputItemAddress.AddressLine1 == itemAddressData.Address.AddressLine1)
+                                    && inputItemAddress.StateProvinceID == address.StateProvinceID)
                                 {
                                     isFound = true;
                                     break;
@@ -281,6 +273,8 @@ namespace Persons.Repository
                                 var newState = new StateProvince();
 
                                 newAddress.StateProvinceID = inputItemAddress.StateProvinceID;
+                                newAddress.City = inputItemAddress.City;
+                                newAddress.PostalCode = inputItemAddress.PostalCode;
                                 newAddress.AddressLine1 = inputItemAddress.AddressLine1;
                                 _repository.Address.CreateAddressAsync(newAddress);
                                 await _repository.SaveAsync();
@@ -290,23 +284,21 @@ namespace Persons.Repository
                                 newBEAddress.AddressID = newAddress.AddressID;
                                 _repository.BeAddress.CreateBeAddressAsync(newBEAddress);
                                 await _repository.SaveAsync();
-
-                                newState.CountryRegionCode = inputItemAddress.CountryRegionCode;
-                                _repository.StateProvince.CreateStateProvincevAsync(newState);
-                                await _repository.SaveAsync();
+                                
                             }
                         }
                         catch (Exception ex)
                         {
                             _logger.LogError($"Error when insert into Table Address {ex.Message}");
                             return false;
-                        }
+                        }   
                     }
                 }
                 // Kondisi untuk Delete PhoneNumber
                 if (profileDto.Address.Count < objAddress.Count())
                 {
-                    var addressDelete = _repository.BeAddress.GetAllBeAddressAsync(trackChanges: true).Result.Where(a => a.BusinessEntityID == businessEntityId);
+                    var addressDelete = _repository.BeAddress.GetAllBeAddressAsync(trackChanges: true).Result.Where(a => a.BusinessEntityID == personEntity.BusinessEntityID);
+
                     foreach (var itemAddDb in addressDelete)
                     {
                         try
@@ -315,8 +307,9 @@ namespace Persons.Repository
 
                             foreach (var itemAddDto in profileDto.Address)
                             {
-                                if (itemAddDto.AddressTypeID == itemAddDb.AddressTypeID &&
-                                    itemAddDto.AddressLine1 == itemAddDb.Address.AddressLine1)
+                                var address = await _repository.Address.GetAddressAsync(itemAddDb.AddressID, trackChanges: false);
+                                if (itemAddDto.AddressTypeID == itemAddDb.AddressTypeID
+                                    && itemAddDto.AddressLine1 == address.AddressLine1)
                                 {
                                     isFound = true;
                                     break;
@@ -337,29 +330,7 @@ namespace Persons.Repository
                     }
                 }
             }
-            else
-            {
-                var bussAddUpdate = _repository.BeAddress.GetAllBeAddressAsync(trackChanges: true).Result.Where(a => a.BusinessEntityID == businessEntityId);
-                *//*foreach (var itemAddDto in profileDto.Address)
-                {
-                    bool isFound = false;
-                    foreach (var itemAddDb in bussAddUpdate) 
-                    {
-                        if (itemAddDb.Address.AddressLine1 == itemAddDto.AddressLine1)
-                        {
-                            isFound = true;
-                            break;
-                        }
-                    }
-                    if (isFound == false)
-                    {
-                        itemAddDb.AddressTypeID = ;
-                        _repository.Email.UpdateEmailAsync(itemDb);
-                        await _repository.SaveAsync();
-                    }
-                }*//*
-            }*/
-
+            
             //jangan di hapus 
             return true;
         }

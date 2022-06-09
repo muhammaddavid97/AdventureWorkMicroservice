@@ -16,6 +16,10 @@ namespace Persons.Entities.DataTransferObject
         public string CountryRegionCode { get; set; }
         [Required(ErrorMessage = "State Province is required")]
         public int StateProvinceID { get; set; }
+        [Required(ErrorMessage = "City is required")]
+        public string City { get; set; }
+        [Required(ErrorMessage = "Postal Code is required")]
+        public string PostalCode { get; set; }
         [Required(ErrorMessage = "Address is required")]
         public string AddressLine1 { get; set; }
     }

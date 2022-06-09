@@ -71,7 +71,6 @@ namespace Persons.Repository
                 password.PasswordHash = signUpDto.Password;
                 password.PasswordSalt = CreateSalt();
                 _repository.Password.CreatePasswordAsync(password);
-                _repository.Password.CreatePasswordAsync(password);
                 await _repository.SaveAsync();
 
                 return true;

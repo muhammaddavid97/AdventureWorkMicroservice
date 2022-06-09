@@ -44,7 +44,7 @@ namespace PersonWebApi.Controllers
 
             var dataProfile = await _profileService.SaveAll(bussEntityId, profileDto);
             await _repository.SaveAsync();
-            return Ok(dataProfile);
+            return Ok(profileDto);
         }
 
         /*[HttpGet("{id}", Name = "EmailByBusinessEntityId")]

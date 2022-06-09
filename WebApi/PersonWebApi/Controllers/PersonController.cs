@@ -25,13 +25,13 @@ namespace PersonWebApi.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet, Authorize]
+        /*[HttpGet, Authorize]
         public async Task<IActionResult> GetPerson()
         {
             var person = await _repository.Person.GetAllPersonAsync(trackChanges: false);
             var personDto = _mapper.Map<IEnumerable<PersonDto>>(person);
             return Ok(personDto);
-        }
+        }*/
 
 
     }

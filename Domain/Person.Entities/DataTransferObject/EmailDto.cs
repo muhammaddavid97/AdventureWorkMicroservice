@@ -11,5 +11,6 @@ namespace Persons.Entities.DataTransferObject
     {
         [Required(ErrorMessage = "Email is required")]
         public string EmailAddress1 { get; set; }
+        public int EmailAddressID { get; set; }
     }
 }

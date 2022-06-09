@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Persons.Contracts;
@@ -24,7 +25,7 @@ namespace PersonWebApi.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("PersonType")]
+        [HttpGet("PersonType"), Authorize]
         public async Task<IActionResult> GetAllPersonTypeAsync()
         {
             var personType = await _repository.PersonTypesView.GetAllPersonTypeAsync(trackChanges: false);
@@ -32,7 +33,7 @@ namespace PersonWebApi.Controllers
             return Ok(personTypeDto);
         }
 
-        [HttpGet("Region")]
+        [HttpGet("Region"), Authorize]
         public async Task<IActionResult> GetAllRegionPersonAsync()
         {
             var regionPerson = await _repository.RegionPersonView.GetAllRegionPersonAsync(trackChanges: false);
